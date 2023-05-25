@@ -32,7 +32,7 @@ pipeline {
         stage('Deploy application') {
             steps {
                 
-                sh 'nohup java -jar spring-petclinic/target/*.jar --server.port=8083 &'
+                sh 'nohup java -jar target/*.jar --server.port=8083 &'
                 sh 'sleep 1m'
             }
         }
