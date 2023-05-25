@@ -205,12 +205,12 @@
 		<repository>
 			<id>petclinic-app-release</id>
 			<name>petclinic-app-release</name>
-			<url>http://23.20.128.166:8081/repository/petclinic-app-release/</url>
+			<url>http://3.93.190.23:8081/repository/petclinic-app-release/</url>
 		</repository>
 		<snapshotRepository>
 			<id>petclinic-app-snapshot</id>
 			<name>petclinic-app-snapshot</name>
-			<url>http://23.20.128.166:8081/repository/petclinic-app-snapshot/</url>
+			<url>http://3.93.190.23:8081/repository/petclinic-app-snapshot/</url>
 		</snapshotRepository>
 	</distributionManagement>
 
