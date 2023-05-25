@@ -5,7 +5,6 @@ pipeline {
         stage('Maven build') {
             steps {
                sh 'rm -rf spring*'
-               sh 'git clone https://github.com/rejunath/spring-petclinic.git'
                sh 'cd spring-petclinic && mvn deploy'
             }
         }
