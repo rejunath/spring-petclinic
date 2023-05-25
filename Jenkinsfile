@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Maven build') {
             steps {
-               sh 'rm -rf spring*'
-               sh 'cd spring-petclinic && mvn deploy'
+               sh 'rm -rf *'
+               sh 'mvn deploy'
             }
         }
         stage('Docker build for application') {
             steps {
-                sh 'cd spring-petclinic && docker build -t rejuaws/petclinic:v1 .'
+                sh 'docker build -t rejuaws/petclinic:v1 .'
             }
         }
         stage('Docker run for application') {
