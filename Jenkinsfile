@@ -4,7 +4,6 @@ pipeline {
     stages {
         stage('Maven build') {
             steps {
-               sh 'rm -rf *'
                sh 'mvn deploy'
             }
         }
